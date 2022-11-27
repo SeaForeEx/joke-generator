@@ -5,9 +5,8 @@ import '../styles/main.scss';
 
 const init = () => {
   document.querySelector('#app').innerHTML = `
-    <h1>Joke Farm</h1>
-    <div><button>Setup</button></div>
-    <div><button>Setup</button></div>
+  <h1>c4's Dad Joke Emporium</h1>
+  <button class="btn btn-danger" id="joke">JOKE</button>
   `;
   console.warn('YOU ARE UP AND RUNNING!');
 
@@ -18,5 +17,11 @@ const init = () => {
   // USE WITH FIREBASE AUTH
   // ViewDirectorBasedOnUserAuthStatus();
 };
+
+
+getJoke().then((yourmomisataco) => {
+  console.warn(yourmomisataco.setup);
+  console.warn(yourmomisataco.delivery);
+});
 
 init();
