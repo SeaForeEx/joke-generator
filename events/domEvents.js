@@ -3,8 +3,8 @@ import jokeSetupButton from '../buttons/jokeSetupButton';
 import newJokeButton from '../buttons/newJokeButton';
 import clearDom from '../utils/clearDom';
 import clearDom2 from '../utils/clearDom2';
-
 import makeJoke from './makeJoke';
+import showPunchline from './showPunchline';
 
 const domEvents = () => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
@@ -24,7 +24,7 @@ const domEvents = () => {
       // This is the punchline playa!
       // `;
       // renderToDOM('#joke-punchline', domString);
-      makeJoke();
+      showPunchline();
       newJokeButton();
     }
 
