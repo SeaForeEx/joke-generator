@@ -2,7 +2,7 @@ import renderToDOM from '../utils/renderToDom';
 
 const jokePunchlineButton = () => {
   const domString = `
-  <button type="button" class="btn btn-primary" id="punchline">JOKE PUNCHLINE</button>
+  <button type="button" class="btn btn-primary joke-btn" id="punchline">JOKE PUNCHLINE</button>
   `;
 
   renderToDOM('#joke-punchline-button', domString);
