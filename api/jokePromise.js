@@ -1,14 +1,13 @@
-const endPoint = 'https://v2.jokeapi.dev/joke/Spooky?safe-mode&type=twopart';
-
 const jokePromise = () => new Promise((resolve, reject) => {
-  fetch(endPoint, {
+  const endpoint = 'https://v2.jokeapi.dev/joke/Programming?safe-mode&type=twopart';
+  fetch(endpoint, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
     },
   })
     .then((response) => response.json())
-    .then((data) => resolve(Object(data)))
+    .then((data) => resolve(data))
     .catch(reject);
 });
 
